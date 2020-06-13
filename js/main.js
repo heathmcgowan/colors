@@ -23,13 +23,13 @@ var players = [
         letter: "G",
         color: "purple",
         score: 0,
-    },
-    {
-        name: "Nick",
-        letter: "N",
-        color: "orange",
-        score: 0,
     }
+    // {
+    //     name: "Nick",
+    //     letter: "N",
+    //     color: "orange",
+    //     score: 0,
+    // }
 ];
 
 var heathScore = 0;
@@ -89,6 +89,8 @@ $( document ).ready(function() {
                 $("#table td").text("");
                 $('#pickingPlayer').text(players[0].name);
                 $('#pickingPlayer').css('color', players[0].color);
+                $('#guessingPlayer').text(players[turn].name);
+                $('#guessingPlayer').css('color', players[turn].color);
                 $("#table td").removeClass("reveal");
                 endOfRound = false;
                 nextRound = false;
@@ -137,15 +139,15 @@ $( document ).ready(function() {
         $('#gina-score-counter').text(ginaScore);
     });
 
-    $('#score-list').append(`<div id="nick-score" class="player-score">
-                                <h2 style="color: orange">Nick:</h2>
-                                <h2 id="nick-score-counter">${nickScore}</h2>
-                            </div>`);
+    // $('#score-list').append(`<div id="nick-score" class="player-score">
+    //                             <h2 style="color: orange">Nick:</h2>
+    //                             <h2 id="nick-score-counter">${nickScore}</h2>
+    //                         </div>`);
 
-    $('#nick-score').click(function() {
-        nickScore++
-        $('#nick-score-counter').text(nickScore);
-    });
+    // $('#nick-score').click(function() {
+    //     nickScore++
+    //     $('#nick-score-counter').text(nickScore);
+    // });
 
 });
 
