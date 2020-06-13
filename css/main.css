@@ -6,7 +6,7 @@ body {
 }
 
 #board {
-    background-image: url("/img/board.jpg");
+    background-image: url("/colors/img/board.jpg");
     background-size: cover;
     width: 1424px;
     height: 950px;
