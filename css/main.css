@@ -92,7 +92,7 @@ td {
 }
 
 #card-container {
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -130,4 +130,7 @@ td {
     align-items: center;
     user-select: none;
     cursor: pointer;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    margin: 10px;
 }
