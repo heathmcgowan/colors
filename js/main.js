@@ -1475,7 +1475,10 @@ $( document ).ready(function() {
     $('#card-btn').click(function() {
         drawCard();
     });
+      
+    var windowWidth = window.matchMedia("(max-width: 700px)");
 
+    checkMobile(windowWidth);
 });
 
 Array.prototype.move = function (from, to) {
@@ -1537,4 +1540,10 @@ function drawCard() {
     $('#reroll').click(function() {
         drawCard();
     });
+}
+
+function checkMobile(x) {
+    if (x.matches) { // If media query matches
+      drawCard();
+    }
 }
