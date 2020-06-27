@@ -30,12 +30,12 @@ var players = [
         color: "orange",
         score: 0,
     },
-    [
+    {
         name: "Peter",
         letter: "P",
         color: "rgb(228,228,228,0)",
         score: 0, 
-    ]
+    }
 ];
 
 var cards = [
@@ -1485,7 +1485,7 @@ $( document ).ready(function() {
 
     $('#peter-score').click(function() {
         peterScore++
-        $('#peter-score-counter').text(peterScore);
+    $('#peter-score-counter').text(peterScore);
     });    
 
     $('#card-btn').click(function() {
