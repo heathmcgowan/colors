@@ -29,7 +29,13 @@ var players = [
         letter: "N",
         color: "orange",
         score: 0,
-    }
+    },
+    [
+        name: "Peter",
+        letter: "P",
+        color: "rgb(228,228,228,0)",
+        score: 0, 
+    ]
 ];
 
 var cards = [
@@ -1471,6 +1477,16 @@ $( document ).ready(function() {
         nickScore++
         $('#nick-score-counter').text(nickScore);
     });
+
+    $('#score-list').append(`<div id="peter-score" class="player-score">
+                                <h2 style="color: orange">peter:</h2>
+                                <h2 id="peter-score-counter">${peterScore}</h2>
+                            </div>`);
+
+    $('#peter-score').click(function() {
+        peterScore++
+        $('#peter-score-counter').text(peterScore);
+    });    
 
     $('#card-btn').click(function() {
         drawCard();
