@@ -1480,7 +1480,7 @@ $( document ).ready(function() {
     });
 
     $('#score-list').append(`<div id="peter-score" class="player-score">
-                                <h2 style="color: orange">peter:</h2>
+                                <h2 style="color: white">peter:</h2>
                                 <h2 id="peter-score-counter">${peterScore}</h2>
                             </div>`);
 

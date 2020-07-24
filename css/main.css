@@ -6,8 +6,8 @@ body {
 }
 
 #board {
-    background-image: url("/colors/img/board.jpg");
-    /* background-image: url("/img/board.jpg"); */
+    /* background-image: url("/colors/img/board.jpg"); */
+    background-image: url("/img/board.jpg");
     background-size: cover;
     width: 1424px;
     height: 950px;
@@ -78,6 +78,10 @@ td {
 
 #score-list {
     margin: 200px 0 0 50px;
+}
+
+#score-list div {
+    font-size: 18px;
 }
 
 #card-btn {
