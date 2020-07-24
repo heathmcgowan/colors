@@ -33,7 +33,7 @@ var players = [
     {
         name: "Peter",
         letter: "P",
-        color: "rgb(228,228,228,0)",
+        color: "rgb(255,255,255,255)",
         score: 0, 
     }
 ];
@@ -1366,6 +1366,7 @@ var elizabethScore = 0;
 var justinScore = 0;
 var ginaScore = 0;
 var nickScore = 0;
+var peterScore = 0;
 
 var table = document.querySelector('#table');
 
